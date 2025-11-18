@@ -1,4 +1,7 @@
 function getFirstElement<T>(arr: T[]): T {
+    if (arr.length === 0) {
+        throw new Error("Порожній массив");
+    }
     return arr[0];
 }
 
